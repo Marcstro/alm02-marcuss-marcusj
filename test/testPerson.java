@@ -39,4 +39,11 @@ public class testPerson {
         }
     }
     
+    @Test
+    public void testsetMessage(){
+        Person p = new Person();
+        p.setMessage("testConfirmation");
+        assertTrue(p.getMessage().equalsIgnoreCase("testConfirmation"));
+    }
+    
 }
