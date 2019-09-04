@@ -12,17 +12,18 @@
             <h2>And see what lies in store for you!</h2><br/>
             <hr />
             
-            <h:outputText value ="Name:"></h:outputText>
-            <h:inputText value ="#{person.namn}"></h:inputText><br/>
+            <h:outputText value ="Name: "></h:outputText>
+            <h:inputText value ="#{person.namn}" required="true"></h:inputText><br/>
             
-            <h:outputText value ="Age:"></h:outputText>
-            <h:inputText value ="#{person.alder}"></h:inputText><br/>
+            <h:outputText value ="Age: "></h:outputText>
+            <h:inputText value ="#{person.alder}" required="true"></h:inputText><br/>
             
-            <h:outputText value ="Occupation"></h:outputText>
-            <h:inputText value ="#{person.jobb}"></h:inputText><br/>
+            <h:outputText value ="Occupation: "></h:outputText>
+            <h:inputText value ="#{person.jobb}" required="true"></h:inputText><br/>
             
-            <h:outputText value ="Gender:"></h:outputText>
-            <h:selectOneRadio value = "#{person.kon}">
+            
+            <h:selectOneRadio value = "#{person.kon}" required="true" >
+                <h:outputText value ="Gender: "></h:outputText>
                 <f:selectItem itemValue="man" itemLabel="man"/>
                 <f:selectItem itemValue="woman" itemLabel="woman"/>
                 <f:selectItem itemValue="horse" itemLabel="horse"/>
