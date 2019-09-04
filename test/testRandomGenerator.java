@@ -15,6 +15,7 @@ public class testRandomGenerator {
     
     RandomGenerator rg = new RandomGenerator();
     
+    @Test
     public void testwhatFactorToConsider(){
         for(int x=0; x<100; x++){
             assertTrue((rg.whatFactorToConsider()>-1) && (rg.whatFactorToConsider() < 4));
